@@ -68,3 +68,15 @@ form.addEventListener('submit',event=>{
   document.querySelector('#contact-form-view').hidden=true;document.querySelector('#contact-result').hidden=false;email.focus();
 });
 document.querySelector('#edit-request').addEventListener('click',()=>{document.querySelector('#contact-form-view').hidden=false;document.querySelector('#contact-result').hidden=true;form.elements.name.focus();});
+
+const introDialog=document.querySelector('.intro-dialog');
+const introVideo=document.querySelector('#intro-video');
+let introTrigger=null;
+document.querySelectorAll('[data-intro]').forEach(button=>button.addEventListener('click',()=>{
+  introTrigger=button;introDialog.showModal();
+  if(introVideo.ended)introVideo.currentTime=0;
+  introVideo.play().catch(()=>{});
+}));
+document.querySelector('.intro-close').addEventListener('click',()=>introDialog.close());
+introDialog.addEventListener('click',event=>{if(event.target!==introDialog)return;const b=introDialog.getBoundingClientRect();if(event.clientX<b.left||event.clientX>b.right||event.clientY<b.top||event.clientY>b.bottom)introDialog.close();});
+introDialog.addEventListener('close',()=>{introVideo.pause();introTrigger?.focus();});

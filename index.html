@@ -6,6 +6,10 @@
   <meta name="description" content="Концепт новой главной edge_center. Облако, CDN и защита — единая инфраструктура для цифровых продуктов.">
   <meta name="robots" content="noindex,nofollow">
   <meta name="theme-color" content="#f4f6f8">
+  <meta property="og:title" content="edge_center — пространство для роста">
+  <meta property="og:description" content="Новая концепция: лендинг, брендбук и 30 секунд пространства для больших идей.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://alexanderkozhevin.github.io/some_test/assets/intro-poster.jpg">
   <title>edge_center — пространство для роста</title>
   <link rel="preload" href="assets/golos-600.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="styles.css">
@@ -48,7 +52,7 @@
       </div>
       <div class="hero-visual">
         <img class="hero-art" src="assets/hero-sculpture.png" alt="Три соединённых модуля — образ единой облачной инфраструктуры" width="1536" height="1024" fetchpriority="high">
-        <div class="art-caption"><span class="caption-line"></span><span>Сложное внутри.<br><b>Простое в управлении.</b></span></div>
+        <button class="art-caption intro-trigger" data-intro aria-haspopup="dialog"><span class="intro-play"><i data-lucide="play"></i></span><span><b>Смотреть интро</b><br>Пространство для роста · 30 сек</span></button>
         <div class="art-label"><span class="signal-dot"></span>cloud + edge + security</div>
       </div>
     </div>
@@ -110,8 +114,13 @@
 <footer class="footer section-wrap">
   <div class="footer-top"><a class="brand" href="#" aria-label="edge_center — на главную"><img src="assets/edge-center-logo.png" width="1127" height="229" alt="edge_center"></a><p>Инфраструктура для того,<br>что вы создадите дальше.</p><a class="footer-phone" href="tel:88007750854">8 800 775 08 54</a><a href="mailto:sales@edgecenter.ru">sales@edgecenter.ru <i data-lucide="arrow-up-right"></i></a></div>
   <div class="footer-links"><div><h3>Продукты</h3><a href="https://edgecenter.ru/cloud">Облако</a><a href="https://edgecenter.ru/cdn">CDN</a><a href="https://edgecenter.ru/security">Защита</a><a href="https://edgecenter.ru/hosting">Хостинг</a><a href="https://edgecenter.ru/streaming-platform">Стриминг</a></div><div><h3>Решения</h3><a href="https://edgecenter.ru/online-retail">Онлайн-ритейл</a><a href="https://edgecenter.ru/media">Медиа</a><a href="https://edgecenter.ru/games">Игры</a><a href="https://edgecenter.ru/fintech">Финтех</a><a href="https://edgecenter.ru/saas">SaaS</a></div><div><h3>Специалистам</h3><a href="https://apidocs.edgecenter.ru/">API-документация</a><a href="https://edgecenter.ru/knowledge-base">База знаний</a><a href="https://status.edgecenter.ru/">Статус сервисов</a><a href="https://edgecenter.ru/legal">Документы</a></div><div><h3>Компания</h3><a href="https://edgecenter.ru/about">О компании</a><a href="https://edgecenter.ru/blog">Блог</a><a href="https://edgecenter.ru/careers">Карьера</a><a href="https://edgecenter.ru/contacts">Контакты</a></div><div class="footer-social"><h3>Остаёмся на связи</h3><a href="https://t.me/edgecenter_news">Telegram <i data-lucide="arrow-up-right"></i></a><a href="https://vk.com/edgecenter">ВКонтакте <i data-lucide="arrow-up-right"></i></a><button class="text-link" data-contact>Задать вопрос <i data-lucide="arrow-up-right"></i></button></div></div>
-  <div class="footer-bottom"><span>© 2026 edge_center · Концепт главной страницы</span><a href="https://edgecenter.ru/legal/pd-processing-policy">Политика конфиденциальности</a><a href="#">Наверх <i data-lucide="arrow-up"></i></a></div>
+  <div class="footer-bottom"><span>© 2026 edge_center · Концепт главной страницы</span><a href="downloads/edge-center-brandbook.pdf" target="_blank" rel="noopener">Брендбук · PDF</a><a href="https://edgecenter.ru/legal/pd-processing-policy">Политика конфиденциальности</a><a href="#">Наверх <i data-lucide="arrow-up"></i></a></div>
 </footer>
 <dialog class="contact-dialog" aria-labelledby="contact-heading"><button class="dialog-close" aria-label="Закрыть окно"><i data-lucide="x"></i></button><div id="contact-form-view"><span class="eyebrow">Начнём с вашей задачи</span><h2 id="contact-heading">Создадим основу<br>для вашего продукта.</h2><p>Расскажите, что хотите запустить или улучшить.</p><form id="contact-form"><div class="form-row"><label>Ваше имя<input name="name" autocomplete="name" required placeholder="Как к вам обращаться"></label><label>Рабочая почта<input name="email" type="email" autocomplete="email" required placeholder="you@company.ru"></label></div><label>Что нужно вашему проекту?<select name="task"><option>Запустить в облаке</option><option>Ускорить сайт</option><option>Защититься от атак</option><option>Организовать трансляцию</option><option>Хранить данные</option><option>Подобрать комплексное решение</option></select></label><label>Несколько слов о задаче<textarea name="message" rows="3" required placeholder="О проекте, текущей нагрузке или планах"></textarea></label><button class="button" type="submit">Подготовить обращение <i data-lucide="arrow-up-right"></i></button><p class="form-note">Это демонстрация формы. Данные останутся в вашем браузере. На следующем шаге можно открыть подготовленное письмо.</p></form></div><div id="contact-result" hidden><span class="success-icon"><i data-lucide="check"></i></span><h2>Обращение готово.</h2><p>Проверьте текст и откройте его в вашей почте. Письмо ещё не отправлено.</p><pre id="request-summary"></pre><a class="button" id="mailto-request">Открыть письмо <i data-lucide="arrow-up-right"></i></a><button class="text-link" id="edit-request">Вернуться к форме</button></div></dialog>
+<dialog class="intro-dialog" aria-labelledby="intro-heading">
+  <div class="intro-toolbar"><h2 id="intro-heading">Пространство для роста</h2><button class="intro-close" aria-label="Закрыть видео" autofocus><i data-lucide="x"></i></button></div>
+  <video id="intro-video" controls playsinline preload="none" poster="assets/intro-poster.jpg" width="1920" height="1080"><source src="assets/edge-center-intro.mp4" type="video/mp4">Ваш браузер не поддерживает видео. <a href="assets/edge-center-intro.mp4">Скачать MP4</a></video>
+  <div class="intro-bottom"><span>edge_center · 30 секунд</span><a href="assets/edge-center-intro.mp4" download>Скачать видео <i data-lucide="arrow-down"></i></a></div>
+</dialog>
 </body>
 </html>
