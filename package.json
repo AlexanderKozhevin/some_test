@@ -1,0 +1,22 @@
+{
+  "name": "edgecenter-concept",
+  "version": "1.0.0",
+  "description": "EdgeCenter multi-page concept",
+  "main": "app.js",
+  "scripts": {
+    "build": "python3 src/build_site.py && esbuild src/three-scenes.js --bundle --minify --format=iife --target=es2020 --outfile=assets/three-scenes.js",
+    "serve": "python3 -m http.server 4317 --bind 127.0.0.1",
+    "check": "node --check site.js && node --check app.js && python3 src/check_site.py"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.9"
+  },
+  "private": true
+}
