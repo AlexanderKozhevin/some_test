@@ -19,7 +19,7 @@ def dialogs(base):
 def cta(base,title='Большие идеи.<br><em>Надёжная основа.</em>'):
  return f'<section class="ec-cta wrap"><span class="eyebrow">Следующий шаг — ваш</span><h2>{title}</h2><p>Обсудим задачу. Соединим всё необходимое.</p><button class="button" data-contact>Начать разговор {A}</button><a class="text-link" href="{base}products/">Изучить продукты {icons("arrow-right")}</a></section>'
 def card(p,base):
- return f'<a class="ec-product-card glow-card" href="{base}{p["slug"]}/" data-category="{p["group"]}" data-search="{p["name"]} {p["brand"]} {p["group"]}"><div class="ec-card-top">{icons(p["icon"])}<span>{p["group"]}</span>{A}</div><div class="mini-sculpt mini-{p["kind"]}" aria-hidden="true"><span></span><span></span><span></span></div><h3>{p["short"]}</h3><p>{p["lead"]}</p><span class="ec-card-link">Подробнее {icons("arrow-right")}</span></a>'
+ return f'<a class="ec-product-card glow-card" href="{base}{p["slug"]}/" data-category="{p["group"]}" data-search="{p["short"]} {p["name"]} {p["brand"]} {p["group"]}"><div class="ec-card-top">{icons(p["icon"])}<span>{p["group"]}</span>{A}</div><div class="mini-sculpt mini-{p["kind"]}" aria-hidden="true"><span></span><span></span><span></span></div><h3>{p["short"]}</h3><p>{p["lead"]}</p><span class="ec-card-link">Подробнее {icons("arrow-right")}</span></a>'
 def scard(s,base):
  return f'<a class="industry-card glow-card" href="{base}{s[0]}/"><div class="ec-card-top">{icons(s[4])}{A}</div><span class="eyebrow">{s[1]}</span><h3>{s[2]}</h3><p>{s[3]}</p><div class="industry-tags">'+''.join(f'<span>{P[x]["short"]}</span>' for x in s[6][:3])+'</div></a>'
 def scene(kind,base,dark=False):
